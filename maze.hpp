@@ -1,6 +1,8 @@
 #ifndef MAZE_HPP
 #define MAZE_HPP
 
+#include <vector>
+
 enum Wall {
     WALL
     ,
@@ -16,5 +18,9 @@ struct Room {
     int w,x, z ,y;
     RoomType roomtype;
 };
+
+typedef std::vector<Room> Maze;
+
+Maze generete(int w,int x, int z ,int y);
 
 #endif
