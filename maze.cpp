@@ -6,7 +6,7 @@ Room::Room(int w_, int x_, int z_, int y_, int tmp_) {
     for (auto wall : walls) wall = WALL;
 }
 
-Maze generete(int x,int y, int z ,int w) {
+Maze generate(int x,int y, int z ,int w) {
     Maze maze;
     int cnt = 0;
     for (int i=0;i<x;i++){

@@ -26,6 +26,6 @@ typedef std::vector<int> Coord;
 
 typedef std::map<Coord, Room> Maze;
 
-Maze generete(int x,int y, int z ,int w);
+Maze generate(int x,int y, int z ,int w);
 
 #endif
