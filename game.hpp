@@ -5,16 +5,16 @@
 
 class Game {
     public:
-    Game(const Maze& maze) : maze_(maze) {}
+    Game(Maze& maze) : maze_(maze), player_{0,0,0,0} {}
 
     void draw();
     bool canMove(int dx, int dy, int dz, int dw);
     void move(int dx, int dy, int dz, int dw);
 
     private:
-    int x, y, z, w;
+    Coord player_;
 
-    const Maze& maze_;
+    Maze& maze_;
 };
 
 #endif
